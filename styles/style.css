@@ -23,7 +23,8 @@
   max-height: 756px;
   position: relative;
   display: flex;
-  z-index: -2;
+  z-index: 0;
+  overflow: hidden;
 
   background-color: #f2f2f2;
 }
@@ -76,6 +77,7 @@
   right: 0;
   bottom: 0;
   z-index: -1;
+
 }
 
 .header__square-pic {
@@ -196,7 +198,7 @@
   height: 790px;
   position: relative;
   padding-top: 100px;
-  z-index: -2;
+  z-index: 0;
 
   background-color: #f2f2f2;
 }
