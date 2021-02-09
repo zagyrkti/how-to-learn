@@ -12,6 +12,18 @@
   }
 }
 
+@keyframes scale_05 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .rotation {
   animation-name: rotate_360;
   animation-timing-function: linear;
@@ -19,17 +31,18 @@
   animation-iteration-count: infinite;
 }
 
+.scale {
+  animation-name: scale_05;
+  animation-timing-function: ease-in-out;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
 
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
-
 }
 
 /* ----------------------header---------------------- */
@@ -164,13 +177,9 @@
   width: 80%;
 }
 
-.wrapper {
+.cards {
   width: 920px;
   margin: 0 auto 0 auto;
-}
-
-.cards {
-  margin: 0 0 0 -100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
@@ -180,18 +189,16 @@
 }
 
 .cards__item {
-  /*margin: 60px 100px 0 0;*/
   width: 240px;
-  margin: 60px 0 0 100px;
+  margin: 60px 100px 0 0;
+
   word-break: break-word;
   text-align: center;
 }
 
-/*.cards__item:nth-child(3) {*/
-/*  margin: 60px 0 0 0;*/
-/*}*/
-
-
+.cards__item:nth-child(3n) {
+  margin: 60px 0 0 0;
+}
 
 .cards__image {
   margin: 0 40px;
@@ -199,7 +206,6 @@
   height: 160px;
 
   object-fit: contain;
-
 }
 
 .cards__title {
@@ -240,18 +246,12 @@
   margin: 0 20px 0 0;
 }
 
-/*.video__iframe:first-child {*/
-/*  margin: 0 20px 0 0;*/
-/*}*/
-
-
 /* -------------------------oakley-------------------------------*/
 
 .oakley {
   padding: 160px 0 0 0;
   background-color: #f2f2f2;
 }
-
 
 /* -------------------------digits-------------------------------*/
 
@@ -262,8 +262,8 @@
 .section-title {
   width: 60%;
   margin: 0 auto 20px auto;
-  text-align: center;
 
+  text-align: center;
   line-height: 1.15;
   font-size: 60px;
   font-weight: 700;
@@ -319,6 +319,7 @@
   position: relative;
   padding-top: 80px;
   z-index: 0;
+  overflow: hidden;
 
   background-color: #f2f2f2;
 }
@@ -418,13 +419,13 @@
   display: flex;
 
 }
-/*TODO anki for object fit and object position*/
+
 .khan__book-pic {
   width: 620px;
   height: 608px;
   object-fit: cover;
   object-position: top;
-  margin: 0 18px 0 0;
+  margin: 0 18px 0 0; /*надпись 48 но по грубым замерам там 18, предположил опечатку. */
 }
 
 .khan__buy-link {
@@ -587,5 +588,4 @@
 
 .link:hover {
   opacity: 0.75;
-
 }
