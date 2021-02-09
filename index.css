@@ -1,6 +1,6 @@
 /*@import "blocks/debug/debug.css";*/
-@import "./blocks/page/page.css";
 @import "./vendor/normalize.css";
+@import "./blocks/page/page.css";
 /*--------------------header--------------------*/
 @import "./blocks/header/header.css";
 @import "./blocks/logo/logo.css";
