@@ -1,0 +1,7 @@
+.khan__book-pic {
+  width: 620px;
+  height: 608px;
+  object-fit: cover;
+  object-position: top;
+  margin: 0 18px 0 0; /*надпись 48 но по грубым замерам там 18, предположил опечатку. */
+}
