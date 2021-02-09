@@ -12,13 +12,13 @@
 <div class="page">
 
   <header class="header">
-    <a href="https://praktikum.yandex.ru/" target="_blank" rel="noopener" class="logo logo_place_header"></a>
+    <a href="https://praktikum.yandex.ru/" target="_blank" rel="noopener" class="logo logo_place_header link"></a>
     <h1 class="header__title">Научиться учиться</h1>
     <p class="header__subtitle">
       Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?
-      <a href="#content" class="header__link">Узнать &rarr;</a>
+      <a href="#content" class="header__link link">Узнать &rarr;</a>
     </p>
-    <div class="header__square-pic"></div>
+    <div class="header__square-pic rotation"></div>
     <div class="header__main-illustration"></div>
   </header>
 
@@ -120,7 +120,7 @@
     <section class="feynman">
       <h2 class="feynman__title">Метод Фейнмана</h2>
       <p class="feynman__subtitle">Выучить и не забыть.</p>
-      <a href="https://fs.blog/2012/04/feynman-technique/" target="_blank" rel="noopener" class="feynman__link">Подробнее
+      <a href="https://fs.blog/2012/04/feynman-technique/" target="_blank" rel="noopener" class="feynman__link link">Подробнее
         &rarr;</a>
       <img src="./images/feynman.png" class="feynman__img" alt="Ричард Фейнман">
     </section>
@@ -167,7 +167,7 @@
       </ul>
     </section>
 
-    <!--TODO add code-->
+    <!--TODO firtst draft-->
     <section class="khan">
       <div class="khan__container">
         <p class="khan__author">Салман Хан</p>
@@ -180,7 +180,7 @@
         <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
         <div class="khan__book-container">
           <img src="./images/khan-book.jpg" class="khan__book-pic" alt="#">
-          <a class="khan__buy-link" target="_blank" rel="noopener"
+          <a class="khan__buy-link link" target="_blank" rel="noopener"
              href="https://www.ozon.ru/product/ves-mir-shkola-preobrazovannoe-obrazovanie-162999126">Купить книгу &rarr;</a>
         </div>
       </div>
@@ -233,46 +233,60 @@
           <p class="table__text table__text_theme_dark">Уделяйте внимание количеству и скорости.</p>
         </li>
       </ul>
-      <div class="kaufman__triangle"></div>
+      <div class="kaufman__triangle rotation"></div>
     </section>
 
-    <!--TODO add code-->
+    <!--TODO first draft-->
     <section class="resources">
-
+      <h2 class="section-title">Полезные ресурсы</h2>
+      <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
+      <ul class="resources__logo-zone">
+        <li><a href="https://arzamas.academy/" target="_blank" rel="noopener" class="link">
+          <img class="resources__logo" src="./images/logo/resources-arzamas.svg" alt="логотип Arzamas"></a>
+        </li>
+        <li><a href="https://nplus1.ru/" target="_blank" rel="noopener" class="link">
+          <img class="resources__logo" src="./images/logo/resources-n1.svg" alt="логотип N+1"></a>
+        </li>
+        <li><a href="https://strelka.com/ru" target="_blank" rel="noopener" class="link">
+          <img class="resources__logo" src="./images/logo/resources-strelka.svg" alt="логотип STRELKA"></a>
+        </li>
+        <li><a href="https://polka.academy/" target="_blank" rel="noopener" class="link">
+          <img class="resources__logo" src="./images/logo/resources-polka.svg" alt="логотип ПОЛКА"></a>
+        </li>
+      </ul>
     </section>
-
   </main>
 
   <!--leave as it is-->
   <footer class="footer">
     <div class="footer__columns">
       <div class="footer__column footer__column_content_copyright">
-        <a href="https://praktikum.yandex.ru/" target="_blank" rel="noopener" class="logo logo_place_footer"></a>
-        <p class="footer__author">&copy;Alexandr M.</p>
+        <a href="https://praktikum.yandex.ru/" target="_blank" rel="noopener" class="logo logo_place_footer link"></a>
+        <p class="footer__author">&copy; 2021 Alexandr M.</p>
       </div>
       <nav class="footer__column footer__column_content_info">
         <h3 class="footer__column-heading">О Практикуме</h3>
         <ul class="footer__column-links">
           <li><a href="https://praktikum.yandex.ru/" target="_blank" rel="noopener"
-                 class="footer__column-link">Главная</a></li>
+                 class="footer__column-link link">Главная</a></li>
           <li><a href="https://yandex.ru/support/praktikum/index.html#index__advantages" target="_blank" rel="noopener"
-                 class="footer__column-link">Концепция</a></li>
+                 class="footer__column-link link">Концепция</a></li>
           <li><a href="https://yandex.ru/support/praktikum/mentors.html" target="_blank" rel="noopener"
-                 class="footer__column-link">Наставники</a></li>
+                 class="footer__column-link link">Наставники</a></li>
         </ul>
       </nav>
       <div class="footer__column footer__column_content_social">
         <h3 class="footer__column-heading">Соцсети</h3>
         <ul class="footer__column-links">
           <li><a href="https://www.facebook.com/yandex.praktikum/" target="_blank" rel="noopener"
-                 class="footer__column-link">
+                 class="footer__column-link link">
             <img src="./images/facebook_color_white.svg" class="footer__social-icon" alt="иконка Facebook">Facebook</a>
           </li>
-          <li><a href="https://vk.com/yandex.praktikum" target="_blank" rel="noopener" class="footer__column-link">
+          <li><a href="https://vk.com/yandex.praktikum" target="_blank" rel="noopener" class="footer__column-link link">
             <img src="./images/vk_color_white.svg" class="footer__social-icon" alt="иконка ВКонтакте">ВКонтакте</a>
           </li>
           <li><a href="https://www.instagram.com/yndx.praktikum/" target="_blank" rel="noopener"
-                 class="footer__column-link">
+                 class="footer__column-link link">
             <img src="./images/instagram_color_white.svg" class="footer__social-icon"
                  alt="иконка instagram">Instagram</a>
           </li>
