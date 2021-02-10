@@ -1,3 +1,7 @@
+.video__iframe-container {
+  display: flex;
+}
+
 .video__iframe-container:first-child {
-    margin: 0 20px 0 0;
+  margin: 0 20px 0 0;
 }
