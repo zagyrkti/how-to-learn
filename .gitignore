@@ -1,2 +1,2 @@
-*.xmind
-/New folder/
+ *.xmind
+.idea/
